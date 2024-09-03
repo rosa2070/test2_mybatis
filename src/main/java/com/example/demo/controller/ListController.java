@@ -16,8 +16,8 @@ public class ListController {
     @GetMapping("/member/list")
     public String list(@RequestParam(name="page", defaultValue = "1") int page, Model model) {
         //한번에 3페이지씩 보이게 설정함 (1,2,3 -> 4,5,6 ..)
-        int start = (page - 1) * 3 + 1;
-        int end = start + 2;
+        int start = (page - 1) * 3 + 1; // 현재 페이지의 시작 행
+        int end = start + 2; //현재 페이지의 마지막 행
 
         int startPage=(page-1)/3* 3 + 1;
         int endPage = startPage+2;
