@@ -1,6 +1,7 @@
-package com.example.demo.mybatis;
+package com.example.demo.service;
 
 import com.example.demo.dto.Member;
+import com.example.demo.mybatis.MemberMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
